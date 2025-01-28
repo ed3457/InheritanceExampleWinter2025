@@ -2,9 +2,17 @@
 //
 
 #include <iostream>
-
+#include "Manager.h"
+#include "Employee.h"
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+	Employee e1;
+
+	Manager m1;
+
+	//e1.printEmployeeInfo();
+
+	m1.printEmployeeInfo();
 }
 
