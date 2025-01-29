@@ -17,5 +17,6 @@ public:
 	Manager();
 	Manager(string i, string e, string n, float s, string bu, float bn);
 
+	void printEmployeeInfo();// override 
 };
 

@@ -11,8 +11,11 @@ int main()
 
 	Manager m1;
 
-	//e1.printEmployeeInfo();
+	e1.printEmployeeInfo();
 
-	m1.printEmployeeInfo();
+	//m1.printEmployeeInfo();
+
+	// Override
+	// Overload 
 }
 

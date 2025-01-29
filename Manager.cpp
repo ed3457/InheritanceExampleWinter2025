@@ -33,3 +33,11 @@ Manager::Manager(string i, string e, string n, float s, string bu, float bn):
 	setBU(bu);
 	setBonus(bn);
 }
+
+void Manager::printEmployeeInfo()
+{
+	Employee::printEmployeeInfo();// call the Employee's class version of printEmployeeInfo
+
+	cout << getBU ()<< endl;
+	cout << getBonus() << endl;
+}
