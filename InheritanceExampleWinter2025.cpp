@@ -7,15 +7,46 @@
 using namespace std;
 int main()
 {
-	Employee e1;
+	//Employee e1; // stack side 
 
-	Manager m1;
+	//Manager m1;
 
-	e1.printEmployeeInfo();
+	//e1.printEmployeeInfo();
 
 	//m1.printEmployeeInfo();
 
-	// Override
-	// Overload 
+	Employee* emp1 = new Employee();// creating an object of type Employee on the heap side
+
+	(*emp1).setName("James");
+
+	emp1->setSalary(2000);
+
+	Employee* emp2 = new Employee("1234", "james@yahoo.com", "James", 3000);
+
+	//delete emp2; 
+	//delete emp1;
+	// 
+	
+	int employeeCount = 3; 
+	Employee* employeeList = new Employee[employeeCount];
+	string temp;
+	for (int i = 0; i < employeeCount; i++)
+	{
+		
+		//employeeList[i].printEmployeeInfo();
+		cout << "Please enter the name of the employee:\n";
+		cin >> temp;
+		
+
+		employeeList[i] = Employee("1234", "james@yahoo.com", temp, 3000);
+		//employeeList[i].setName(temp);
+	}
+
+	for (int i = 0; i < employeeCount; i++)
+	{
+		employeeList[i].printEmployeeInfo();
+		
+	}
+
 }
 
