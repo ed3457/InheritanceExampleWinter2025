@@ -25,6 +25,7 @@ public:
 
 	Employee();
 	Employee(string i, string e, string n, float s);
+	Employee(const Employee& sourceData);
 
 	void printEmployeeInfo();
 

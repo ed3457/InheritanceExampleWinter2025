@@ -7,7 +7,7 @@
 using namespace std;
 int main()
 {
-	//Employee e1; // stack side 
+	Employee e1; // stack side 
 
 	//Manager m1;
 
@@ -67,6 +67,11 @@ int main()
 		empListCopy[i].setSalary(employeeList[i].getSalary());
 
 	}
+
+	//setting up the object using two kinds of constructors 
+	//Employee e2(e1);
+
+	// Employee e2(e1.getID(),e1.getEmail(),e1.getName(),e1.getSalary());
 
 
 }

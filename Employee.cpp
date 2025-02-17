@@ -56,6 +56,15 @@ Employee::Employee(string i, string e, string n, float s)
 	setSalary(s);
 }
 
+Employee::Employee(const Employee& sourceData):Employee(sourceData.name, sourceData.email, sourceData.id, sourceData.salary)
+{
+	/*setName(sourceData.name);
+	setEmail(sourceData.email);
+	setID(sourceData.id);
+	setSalary(sourceData.salary);*/
+	
+}
+
 void Employee::printEmployeeInfo()
 {
 	cout << getName() << endl;
